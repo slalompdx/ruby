@@ -1,16 +1,26 @@
-rpm-ruby
+ruby-rpm
 ========
 
-An RPM spec file to build and install Ruby 2.0 on RHEL.
+An RPM spec file to build and install Ruby 2.1 on RHEL.
 
-To build:
+Install packages to build RPMs in general:
+`sudo yum -y install rpmdevtools `
 
-`sudo yum -y install rpmdevtools && rpmdev-setuptree`
+Install libary packages:
+`sudo yum -y install glibc-devel readline-devel libyaml-devel ncurses-devel gdbm-devel tcl-devel openssl-devel db4-devel libffi-devel`
 
-`sudo yum -y install readline libyaml libyaml-devel readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make libffi-devel`
+Install some development tools:
+`sudo yum -y install make gcc unzip byacc`
 
-`wget https://raw.github.com/nmilford/rpm-ruby/master/ruby.spec -O ~/rpmbuild/SPECS/ruby.spec`
+Create build environment for RPMs:
+`mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}`
+`cd rpmbuild`
 
-`wget ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz -O ~/rpmbuild/SOURCES/ruby-2.1.0.tar.gz`
+Get the spec file and ruby sources:
+`wget https://raw.github.com/nmilford/rpm-ruby/master/ruby.spec -O SPECS/ruby.spec`
+`wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz -O SOURCES/ruby-2.1.5.tar.gz`
 
-`QA_RPATHS=$[ 0x0001|0x0010 ] rpmbuild -bb ~/rpmbuild/SPECS/ruby.spec`
+Build the RPM
+`rpmbuild -ba SPEC/ruby.spec`
+
+Have fun with ruby ;-)
