@@ -21,4 +21,4 @@ Get the spec file and ruby sources:
 Build the RPM
 `rpmbuild -ba SPEC/ruby.spec`
 
-Have fun with ruby ;-)
+Have fun with [ruby](http://ruby-lang.org/) ;-)
