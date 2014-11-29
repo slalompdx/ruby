@@ -1,7 +1,5 @@
-ruby-rpm
-========
-
-An RPM spec file to build and install Ruby 2.1 on RHEL.
+RPM spec file to build a ruby package
+=====================================
 
 Install packages to build RPMs in general:
 `sudo yum -y install rpmdevtools `
