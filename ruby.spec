@@ -3,9 +3,9 @@
 #
 
 %define rubyver         2.2.2
-
+%define rubyminorver    p95
 Name:           ruby
-Version:        %{rubyver}
+Version:        %{rubyver}_%{rubyminorver}
 Release:        1%{?dist}
 License:        Ruby License/GPL - see COPYING
 URL:            http://www.ruby-lang.org/
