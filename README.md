@@ -3,7 +3,7 @@ RPM spec file to build a ruby package
 
 Install packages to build RPMs in general:
 
-`sudo yum -y install rpmdevtools `
+    sudo yum -y install rpmdevtools
 
 
 Install libary packages:
