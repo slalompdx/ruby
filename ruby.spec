@@ -2,7 +2,7 @@
 # ruby.spec
 #
 
-%define rubyver         2.1.5
+%define rubyver         2.1.6
 #%define rubyminorver    p353
 
 Name:           ruby
@@ -69,6 +69,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}
 
 %changelog
+* Sat Jul 25 2015 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.1.6
+- Update to 2.1.6
 * Sat Nov 29 2014 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.1.5
 - Update to 2.1.5
 * Fri Apr 25 2014 Spike Grobstein <sgrobstein@shutterstock.com> - 2.1.1
