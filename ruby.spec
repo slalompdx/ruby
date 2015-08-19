@@ -2,22 +2,20 @@
 # ruby.spec
 #
 
-%define rubyver         2.1.5
-#%define rubyminorver    p353
-
+%define rubyver         2.2.2
+%define rubyminorver    p95
 Name:           ruby
-#Version:        %{rubyver}_%{rubyminorver}
-Version:        %{rubyver}
+Version:        %{rubyver}_%{rubyminorver}
 Release:        1%{?dist}
 License:        Ruby License/GPL - see COPYING
 URL:            http://www.ruby-lang.org/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  readline libyaml libyaml-devel readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make libffi-devel
 Requires:       libyaml openssl
-Source0:        http://cache.ruby-lang.org/pub/ruby/2.1/ruby-%{rubyver}.tar.gz
+Source0:        https://cache.ruby-lang.org/pub/ruby/2.2/ruby-%{rubyver}.tar.gz
 Summary:        An interpreter of object-oriented scripting language
 Group:          Development/Languages
-Provides: ruby(abi) = 2.1
+Provides: ruby(abi) = 2.2
 Provides: ruby-irb
 Provides: ruby-rdoc
 Provides: ruby-libs
@@ -37,7 +35,6 @@ files and to do system management tasks (as in Perl).  It is simple,
 straight-forward, and extensible.
 
 %prep
-#%setup -n ruby-%{rubyver}-%{rubyminorver}
 %setup -n ruby-%{rubyver}
 
 %build
@@ -69,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}
 
 %changelog
+* Tue Aug 18 2015 Tanner Jones <tannerjones10@gmail.com> - 2.2.2
+- Update to 2.2.2
 * Sat Nov 29 2014 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.1.5
 - Update to 2.1.5
 * Fri Apr 25 2014 Spike Grobstein <sgrobstein@shutterstock.com> - 2.1.1
