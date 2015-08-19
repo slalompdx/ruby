@@ -2,10 +2,9 @@
 # ruby.spec
 #
 
-%define rubyver         2.2.2
-%define rubyminorver    p95
+%define rubyver         2.2.3
 Name:           ruby
-Version:        %{rubyver}_%{rubyminorver}
+Version:        %{rubyver}
 Release:        1%{?dist}
 License:        Ruby License/GPL - see COPYING
 URL:            http://www.ruby-lang.org/
@@ -66,6 +65,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}
 
 %changelog
+* Tue Aug 19 2015 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.2.3
+- Update to 2.2.3
 * Tue Aug 18 2015 Tanner Jones <tannerjones10@gmail.com> - 2.2.2
 - Update to 2.2.2
 * Sat Jul 25 2015 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.1.6
