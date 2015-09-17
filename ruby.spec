@@ -3,6 +3,8 @@
 #
 
 %define rubyver         2.2.3
+%define _prefix /usr/local
+
 Name:           ruby
 Version:        %{rubyver}
 Release:        1%{?dist}
@@ -14,18 +16,7 @@ Requires:       libyaml openssl
 Source0:        https://cache.ruby-lang.org/pub/ruby/2.2/ruby-%{rubyver}.tar.gz
 Summary:        An interpreter of object-oriented scripting language
 Group:          Development/Languages
-Provides: ruby(abi) = 2.2
-Provides: ruby-irb
-Provides: ruby-rdoc
-Provides: ruby-libs
-Provides: ruby-devel
-Provides: rubygems
-Obsoletes: ruby
-Obsoletes: ruby-libs
-Obsoletes: ruby-irb
-Obsoletes: ruby-rdoc
-Obsoletes: ruby-devel
-Obsoletes: rubygems
+Prefix: /usr/local
 
 %description
 Ruby is the interpreted scripting language for quick and easy
