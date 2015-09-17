@@ -24,7 +24,7 @@ Create build environment for RPMs:
 
 Get the spec file and ruby sources:
 
-    wget https://github.com/innotronic/ruby/raw/master/ruby.spec -O SPECS/ruby.spec
+    wget https://github.com/kcrawford/ruby/raw/master/ruby.spec -O SPECS/ruby.spec
     wget https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz -O SOURCES/ruby-2.2.3.tar.gz
 
 
