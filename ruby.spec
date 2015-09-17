@@ -31,7 +31,6 @@ straight-forward, and extensible.
 export CFLAGS="$RPM_OPT_FLAGS -Wall -fno-strict-aliasing"
 
 %configure \
-  --enable-shared \
   --disable-rpath \
   --includedir=%{_includedir}/ruby \
   --libdir=%{_libdir}
