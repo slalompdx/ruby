@@ -5,7 +5,7 @@
 %define rubyver         2.2.3
 %define _prefix /usr/local
 
-Name:           ruby
+Name:           ruby2
 Version:        %{rubyver}
 Release:        1%{?dist}
 License:        Ruby License/GPL - see COPYING
