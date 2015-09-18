@@ -29,8 +29,10 @@ straight-forward, and extensible.
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wall -fno-strict-aliasing"
+export LDFLAGS="-Wl,-rpath,/usr/local/lib64/"
 
 %configure \
+  --enable-shared \
   --disable-rpath \
   --includedir=%{_includedir}/ruby \
   --libdir=%{_libdir}
