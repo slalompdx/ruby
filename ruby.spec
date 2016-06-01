@@ -2,7 +2,7 @@
 # ruby.spec
 #
 
-%define rubyver         2.2.3
+%define rubyver         2.3.1
 %define _prefix /usr/local
 
 Name:           ruby2
@@ -11,7 +11,7 @@ Release:        1%{?dist}
 License:        Ruby License/GPL - see COPYING
 URL:            http://www.ruby-lang.org/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  readline libyaml libyaml-devel readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel db4-devel byacc make libffi-devel
+BuildRequires:  readline libyaml libyaml-devel readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel tcl-devel gcc unzip openssl-devel compat-db47 byacc make libffi-devel
 Requires:       libyaml openssl
 Source0:        https://cache.ruby-lang.org/pub/ruby/2.2/ruby-%{rubyver}.tar.gz
 Summary:        An interpreter of object-oriented scripting language
