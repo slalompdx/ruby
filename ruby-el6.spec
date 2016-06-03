@@ -55,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}
 %{_datadir}
 %{_libdir}
+%{_mandir}
 
 %changelog
 * Tue Aug 19 2015 Innotronic Ingenieurbüro GmbH <info@inno.ch> - 2.2.3
