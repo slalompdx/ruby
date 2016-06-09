@@ -1,0 +1,4 @@
+FROM dev7
+MAINTAINER Eric Shamow <eric.shamow@slalom.com> version: 0.1
+COPY ruby.pp /tmp/ruby.pp
+CMD /opt/puppetlabs/bin/puppet apply -v /tmp/ruby.pp

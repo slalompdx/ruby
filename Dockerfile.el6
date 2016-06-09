@@ -1,0 +1,3 @@
+FROM dev6
+MAINTAINER Eric Shamow <eric.shamow@slalom.com> version: 0.1
+CMD cp -r /build /rpmbuild && /usr/bin/rpmbuild -ba --define "_topdir /rpmbuild" /rpmbuild/SPECS/ruby-el6.spec && cp -r /rpmbuild/RPMS/* /build/RPMS/

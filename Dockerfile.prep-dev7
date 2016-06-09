@@ -1,0 +1,6 @@
+FROM centos:7
+MAINTAINER Eric Shamow <eric.shamow@slalom.com> version: 0.1
+COPY dev.pp /tmp/dev.pp
+RUN rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm && yum -y install puppet-agent
+RUN /opt/puppetlabs/bin/puppet module install maestrodev-wget
+RUN /opt/puppetlabs/bin/puppet apply -v /tmp/dev.pp
