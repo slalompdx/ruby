@@ -1,3 +1,5 @@
+NOTE: This readme is out of date. Fix it!
+
 RPM spec file to build a ruby package
 =====================================
 
