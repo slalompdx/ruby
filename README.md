@@ -1,7 +1,24 @@
-NOTE: This readme is out of date. Fix it!
 
-RPM spec file to build a ruby package
-=====================================
+Leverage Docker to build Ruby RPMs
+==================================
+These instructions are tested on Mac OSX, Yosemite and newer:
+
+1. Make sure Docker is running (recommend the new Docker beta)
+2. Clone this repo to user directory, as the script relies on this location
+3. Run:
+```
+./build6.sh
+```
+or
+```
+./build7.sh
+```
+
+Depending on building for Centos6 or Centos7.
+
+------------------
+
+####General steps scripted:
 
 Install packages to build RPMs in general:
 
