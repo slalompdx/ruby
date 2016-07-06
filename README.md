@@ -4,7 +4,7 @@ Leverage Docker to build Ruby RPMs
 These instructions are tested on Mac OSX, Yosemite and newer:
 
 1. Make sure Docker is running (recommend the new Docker beta)
-2. Clone this repo to user directory, as the script relies on this location
+2. FIXME: Clone this repo to the ~/uproj directory, as the script relies on this location
 3. Run:
 ```
 ./build6.sh
