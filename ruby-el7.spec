@@ -2,7 +2,7 @@
 # ruby.spec
 #
 
-%define rubyver         2.3.1
+%define rubyver         %{?override_rubyver}%{?!override_rubyver:2.3.1}
 %define _prefix /usr/local
 
 Name:           ruby2
